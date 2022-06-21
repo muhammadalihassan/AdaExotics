@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+
+@font-face {
+    font-family: Proxima-Nova;
+    src: url(../public/fonts/Proxima\ Nova\ Font.otf);
+}
+
+@font-face {
+    font-family: Museo;
+    src: url(../public/fonts/Museo700-Regular.otf);
+}
+@font-face {
+    font-family: Pacifica;
+    src: url(../public/fonts/pacificacondensedregular.ttf);
+}
+a{text-decoration: none;}
+@media (min-width: 1400px){
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 980px;
+}
+}
+body {
+    font-family: Proxima-Nova;
+    position: relative;
+    color: #000;
+    background-image: url(./Assets/background-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+}
+/* Header Start  */
+.navbar-brand {
+    margin-right: 0;
+}
+.navbar-nav{align-items: center;}
+.navbar-nav a {
+    padding: 0 13px;
+    color: #000;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+.navbar-nav a:hover{
+    color: #DEFCD7;
+}
+header {
+    padding: 15px 0;
+}
+.nav-links span {
+    padding-right: 5px;
+}
+
+/* header End  */
+
+/* section switch  */
+.section-switch {
+    display: grid;
+    position: fixed;
+    right: 51px;
+    top: 40%;
+    z-index: 1;
+}
+.section-switch li{list-style: none;}
+.section-switch ul li a.active{
+    background-color: #87AD46;
+    position: relative;
+}
+.section-switch ul li a.active::before {
+    content: '';
+    position: absolute;
+    border: 1px solid #87AD46;
+    width: 27px;
+    height: 27px;
+    left: -7px;
+    top: -7px;
+    border-radius: 50%;
+}
+.section-switch a {
+    background-color: #fff;
+    height: 13px;
+    width: 13px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+/* section switch END */
+
+/* banner  */
+.banner-heading {
+    text-align: center;
+}
+.banner-video video {
+    border-radius: 100px;
+}
+
+/* banner End */
+
+/* about section  */
+.about {
+    padding: 50px 0;
+    background-color: #000;
+    margin: 30px 0;
+
+}
+.head-img {
+    text-align: center;
+}
+.head-img p {
+    text-align: left;
+    color: #fff;
+    width: 75%;
+    margin: 0 auto;
+}
+.about-slider .container{
+    max-width: 1150px;
+}
+.about-slider img {
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.5s all;
+}
+.item {
+    padding: 6px;
+    position: relative;
+    transition: 0.5s all;
+}
+.shade {
+    background-color: #fff9;
+    height: 80px;
+    width: 100%;
+}
+.shade {
+    background-color: #ffffffba;
+    height: 366px;
+    width: 97%;
+    position: absolute;
+    top: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: -1px;
+    opacity: 0;
+    transition: 0.5s all;
+}
+.about-slider {
+    padding: 20px 0;
+}
+.about-slider .item:hover .shade {
+    opacity: 1;
+}
+.about-slider .slick-next:before {
+    content: '\f105';
+    font-family: fontawesome;
+    font-size: 50px;
+}
+.about-slider .slick-prev:before {
+    content: '\f104';
+    font-family: fontawesome;
+    font-size: 50px;
+}
+.series-gallery h6 {
+    font-family: Museo;
+    color: #fff;
+    text-align: center;
+    font-size: 46px;
+    letter-spacing: 10px;
+}
+.gallery-images img{
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+.gallery-images ul{
+    width: 100%;
+    display: inline-block;
+}
+.gallery-images li {
+    float: left;
+    width: 20%;
+}
+/* about section End */
+
+/* roamdap  */
+.roadmap{
+    background-color: #000;
+}
+.roadmap-img img{
+    width: 100%;
+}
+.roadmap-img{position: relative;}
+.back-circle svg {
+    position: absolute;
+    top: 48%;
+    left: 9%;
+}
+.arrow-next svg {
+    transform: rotate(95deg);
+    position: absolute;
+    top: 47%;
+    right: 147px;
+}
+/* roamdap End */
+
+/* project utility  */
+.project-utility {
+    background-color: #000;
+    margin: 30px 0;
+}
+/* project utility END */
+
+/* the team  */
+.team{
+    background-color: #000;
+}
+.team-img{position: relative;}
+.team-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+.team-detail {
+    text-align: center;
+    padding: 10px 0;
+}
+.team-detail h5{
+    font-family: Pacifica;
+    color: #fff;
+    font-size: 46px;
+    text-transform: uppercase;
+}
+.team-detail h6{
+    font-size: 22px;
+    color: rgb(177,211,187);
+}
+.ceo img {
+    width: 100%;
+    height: 377px;
+}
+.ceo {
+    position: absolute;
+    top: 3px;
+    left: -3px;
+    opacity: 0;
+    transition: 0.5s all;
+}
+.card-width{
+    max-width: 1200px;
+}
+.team-img:hover .ceo{
+    opacity: 1;
+}
+.team-para p {
+    color: #fff;
+    width: 62%;
+    margin: 15px auto;
+    padding-bottom: 60px;
+}
+/* the team END */
+
+/* faq  */
+.faq{
+    background-color: #000;
+    margin: 30px 0 0;
+    padding-bottom: 60px;
+}
+.accordian-area .accordion-button
+{
+    padding: 0;
+    background-color: #0D0D0D;
+    border-radius: 0 !important;
+}
+
+.accordian-area .accordion-item{
+    border-color: #000;
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+.num {
+    background-color: rgb(255 255 255 / 10%) !important;
+    color: #fff;
+    height: 102px;
+    width: 130px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 110px;
+}
+.accordian-area .accordion-button:hover .num{
+    background-color: rgb(64, 124, 81) !important;
+}
+.accordian-area .accordion-button::after{background-image: none;}
+.accord-head h3 {
+    color: #fff;
+    padding-left: 50px;
+    padding-top: 15px;
+    font-size: 25px;
+}
+.accordian-area .accordion-button:focus {
+    border-color: #0D0D0D;
+    box-shadow: none;
+}
+.accordian-area .accordion-body{
+    background-color: #000;
+    color: #fff;
+}
+/* faq End */
+
+/* footer  */
+footer{
+    padding: 20px 0;
+    background-color: #0B391B;
+}
+.main-footer .row{
+    align-items: center;
+}
+.f-logo p {
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+footer .nav-links span {
+    padding-right: 15px;
+}
+footer .nav-links {
+    float: right;
+}
+/* footer End */
