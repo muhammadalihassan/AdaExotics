@@ -172,7 +172,7 @@ function App() {
                                     <img src={team_img3} alt="img" />
                                 </div>
                                 <div className="team-detail">
-                                    <h5>JASPER</h5>
+                                    <h5>FARSIGHT</h5>
                                     <h6>Backend Developer</h6>
                                 </div>
                             </div>
